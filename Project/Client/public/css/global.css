@@ -1,0 +1,59 @@
+/* Navigation menu styles */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3FE196;
+    overflow: hidden;
+}
+
+.nav-menu li {
+    float: left;
+}
+
+.nav-menu li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: #4ACAA3;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #3FE196;
+    transition: background-color 0.3s ease;
+}
+
+/* Change the header background color on hover */
+th:hover {
+    background-color: #339E7D;
+}
+
+/* Body and text styles */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #3FE196;
+}
+
+h2 {
+    color: #3FE196;
+}

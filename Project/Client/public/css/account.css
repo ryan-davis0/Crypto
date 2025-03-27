@@ -1,0 +1,54 @@
+/* ... Your existing global styles ... */
+
+.account-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkcyan;
+  border-radius: 5px;
+
+}
+
+.attribute {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: bold;
+}
+
+
+li {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #3FE196;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: underline;
+  text-align: center;
+}
+
+li:hover {
+  color: #333;
+}
+
+li.active {
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+  margin-right: 20px;
+    font-size: 18px;
+    color: #3FE196;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* ... Other global styles ... */

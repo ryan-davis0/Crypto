@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+
+<body>
+    <div class="firstp">
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li id="homeOption" onclick="navigateTo('home')">Home</li>
+                    <% if (userIsLoggedIn) { %>
+                        <li id="portfolioOption" onclick="navigateTo('portfolio')">Portfolio</li>
+                        <li id="accountOption" onclick="navigateTo('account')">Your Account</li>
+                        <li id="logoutOption" onclick="navigateTo('logout')">Logout</li>
+                    <% } else { %>
+                        <li id="loginOption" onclick="navigateTo('login')">Login</li>
+                        <li id="registerOption" onclick="navigateTo('register')">Register</li>
+                    <% } %>
+                </ul>
+            </div>
+            <h1>Home Page</h1>
+        </div>
+        <div class="crypto-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="rank">Rank</th>
+                        <th id="name">Name</th>
+                        <th id="symbol">Symbol</th>
+                        <th id="price">Price (USD)</th>
+                        <th id="percentChange">24h Change (%)</th>
+                        <th id="marketCap">Market Cap (USD)</th>
+                        <th id="supply">Supply</th>
+                        <th id="volume24hr">Volume (24h)</th>
+                        <th id="volumeWAP24hr">Volume-Weighted Average Price (24h)</th>
+                    </tr>
+                </thead>
+                <tbody id="cryptoData">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

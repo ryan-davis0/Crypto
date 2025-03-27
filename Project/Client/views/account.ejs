@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Webpage title and stylesheets -->
+    <title>Your account</title>
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/account.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <ul>
+            <!-- Navigation options with onclick events -->
+            <li id="homeOption" onclick="navigateTo('home')">Home</li>
+            <li id="portfolioOption" onclick="navigateTo('portfolio')">Portfolio</li>
+            <li id="accountOption" onclick="navigateTo('account')">Your Account</li>
+            <li id="logoutOption" onclick="navigateTo('logout')">Logout</li>
+        </ul>
+    </div>
+    
+    <!-- Account details section -->
+    <div class="account-details">
+        <h1>Account Details</h1>
+        
+        <!-- Individual account attributes -->
+        <div class="attribute">
+            <span class="label">Username:</span>
+            <span class="value"><%= account.username %></span>
+        </div>
+        <div class="attribute">
+            <span class="label">First Name:</span>
+            <span class="value"><%= account.firstname %></span>
+        </div>
+        <div class="attribute">
+            <span class="label">Last Name:</span>
+            <span class="value"><%= account.lastname %></span>
+        </div>
+        <div class="attribute">
+            <span class="label">Date of Birth:</span>
+            <span class="value"><%= account.DOB %></span>
+        </div>
+    </div>
+    
+    <!-- External JavaScript file -->
+    <script src="/js/account.js"></script>
+</body>
+</html>

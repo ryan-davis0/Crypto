@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Crypto Details</title>
+    <!-- Linking to external CSS files for styling -->
+    <link rel="stylesheet" type="text/css" href="/css/detail.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <!-- Main container for the page content -->
+    <div class="firstp">
+        <div class="container">
+            <!-- Navigation bar section -->
+            <div class="navigation">
+                <ul>
+                    <!-- Static navigation options -->
+                    <li id="homeOption" onclick="navigateTo('home')">Home</li>
+                    <!-- Conditional navigation options based on user login status -->
+                    <% if (userIsLoggedIn) { %>
+                        <li id="portfolioOption" onclick="navigateTo('portfolio')">Portfolio</li>
+                        <li id="accountOption" onclick="navigateTo('account')">Your Account</li>
+                        <li id="logoutOption" onclick="navigateTo('logout')">Logout</li>
+                    <% } else { %>
+                        <li id="loginOption" onclick="navigateTo('login')">Login</li>
+                        <li id="registerOption" onclick="navigateTo('register')">Register</li>
+                    <% } %>
+                </ul>
+            </div>
+            <!-- Section for displaying cryptocurrency details -->
+            <div class="coin-details">
+                <h1>Coin Details</h1>
+                <!-- Repeated structure for each attribute of the coin -->
+                <!-- Each attribute consists of a label and a value -->
+                <div class="attribute">
+                    <span class="label">Rank:</span>
+                    <span class="value"><%= coin.rank %></span>
+                </div>
+                <!-- Additional attributes follow the same pattern -->
+                ...
+            </div>
+        </div>
+    </div>
+    <!-- Linking to an external JavaScript file -->
+    <script src="/js/detail.js"></script>
+</body>
+</html>

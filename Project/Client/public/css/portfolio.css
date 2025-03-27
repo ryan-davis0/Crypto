@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #3FE196;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    color: #3FE196;
+    font-style: italic;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3FE196;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:nth-child(odd) {
+    background-color:#1a1a1a;
+}
+
+
+
+.tableDes {
+    margin: 0;
+    padding: 10px;
+    color: #3FE196;
+    font-weight: bold;
+    position: absolute;
+    right: 6;
+}
+
+.fade {
+    text-align: center;
+    font-size: 25px;
+    animation: fadeInOut 5s ease-in-out infinite;
+    opacity: 0;
+    color: #3FE196;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #3FE196;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: underline;
+    text-align: center;
+}
+
+li:hover {
+    color: #333;
+}
+
+li.active {
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2E8B57; /* Updated button color to a green shade */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+
+body {
+    background-image: url('/images/bkg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0; 
+    padding: 0; 
+  }
+  
+
+  .content {
+    
+    padding: 20px;
+  }
+  h1 {
+    color: #AA336A ;
+    font-size: 48px; 
+    margin-top: 20px; 
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.message {
+    color: #fff; 
+    font-size: 24px;
+    animation: ChangeColor 5s linear infinite;
+    position: absolute; 
+    top: 80%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border: none; 
+}
+@keyframes ChangeColor {
+    0%, 100% {
+        color: purple;
+        
+    }
+   
+    10%, 90% {
+         
+    } 
+
+    20%, 80% {
+        
+        color: #6c6289; 
+    }
+    30%, 70% {
+        
+        
+    }
+    40%, 60% {
+        
+        color: violet;
+    }
+    50%{
+        
+    }
+}
